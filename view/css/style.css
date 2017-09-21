@@ -69,12 +69,26 @@ margin: auto; */
 /* btn */
 
 #btn_login,
-.btn_detail,
-.btn_search{
+#right-wrapper .btn_search{
 	display: block;
 	margin: 0 auto;
 	color: #fff;
-	padding: .5em 1em;
+	padding: 0 1em;
+	background: #0b84d2;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	height: 44px;
+	line-height: 44px;
+}
+
+.btn_detail{
+/* 	display: block; */
+	margin: 20px auto;
+	color: #fff;
+	padding: 0 1em;
+	height: 30px;
+	line-height: 30px;
 	background: #0b84d2;
 	border: 0;
 	border-radius: 5px;
@@ -95,22 +109,26 @@ margin: auto; */
 	display: block;
 	margin: 0 auto;
 	color: #fff;
-	padding: .5em 4em;
+	padding: 0 4em;
 	background: #d21616;
 	border: 0;
 	border-radius: 5px;
 	cursor: pointer;
+	height: 44px;
+	line-height: 44px;
 }
 
 .btn_return{
 	display: block;
 	margin: 0 auto;
 	color: #fff;
-	padding: 1em 4em;
+	padding: 0 4em;
 	background: #d21616;
 	border: 0;
 	border-radius: 5px;
 	cursor: pointer;
+	height: 44px;
+	line-height: 44px;
 }
 
 .btn_regist:hover,
@@ -122,11 +140,13 @@ margin: auto; */
 	display: block;
 	margin: 0 auto;
 	color: #fff;
-	padding: 1em 4em;
+	padding: 0 4em;
 	background: #098400;
 	border: 0;
 	border-radius: 5px;
 	cursor: pointer;
+	height: 44px;
+	line-height: 44px;
 }
 
 .btn-excel:hover{
@@ -207,7 +227,8 @@ margin: auto; */
 }
 
 input[type="text"]:focus,
-input[type="password"]:focus {
+input[type="password"]:focus,
+textarea:focus{
   box-shadow: 0 0 2px 0 rgba(19,152,207,1);
   outline: 0;
   border: solid 1px #fff;
@@ -320,11 +341,13 @@ margin: 0 30 20; */
 	display: inline-block;
 	font-size: 18px;
 	font-weight: normal;
-	padding: 10px 40px;
+	padding: 0 40px;
 	background: #222;
 	color: #fff;
 	text-shadow: 1px 1px 1px #666;
 	box-shadow: 1px 1px 1px #ccc;
+	height: 44px;
+	line-height: 44px;
 }
 
 #regist {
@@ -398,6 +421,9 @@ margin: 0 30 20; */
 	height: 27px;
 	line-height: 27px;
 	padding: 0 1em;
+	vertical-align: middle;
+	top: 0;
+	bottom: 0;
 }
 
 .start-date{
@@ -416,8 +442,11 @@ margin: 0 30 20; */
     top: 0;
 }
 
-.datepick-wrapper input{
+#right-wrapper input{
 	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+	height: 27px;
 }
 
 .end-date{
@@ -478,7 +507,7 @@ font-weight: bold;
 #left-wrapper table tbody td{
 	border-bottom: dotted 1px #ccc;
 	box-sizing: border-box;
-    padding: 1em 0;
+    line-height: 70px;
     font-weight: bold;
     font-size: 18px;
 }
@@ -652,20 +681,35 @@ margin-bottom: 2em; */
 }
 
 .input {
-	background-color: #82a4a3;
-	padding: 40px;
+	background-color: #fff;
+	padding: 60px;
 	margin: 50px auto;
 	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	min-height: 50%;
+}
+
+.event-list .input{
+	max-width: 800px;
+}
+
+.input input,
+.input textarea{
+	width: 100%;
+}
+
+.input dl{
+	width: 100%;
+	margin: 0 auto;
 }
 
 .input dt{
-	margin-bottom: 1em;
-	padding-left: .5em;
+	margin: 0 auto 1em;
 	border-left: solid 10px #444;
+	padding-left: .5em;
 }
 
 .input dd{
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 }
 
 .input dd span{
@@ -675,6 +719,13 @@ margin-bottom: 2em; */
 	color: #aaa;
 
 }
+
+.input .btn_regist,
+.input .btn_return{
+	width: 200px;
+}
+
+
 
 /* .btn_search {
 	font-size:16px;
@@ -710,12 +761,14 @@ margin-bottom: 2em; */
 
 .ui-datepicker-calendar tr td:first-child a {
 	background-image: none;
-	background-color: #FF0000;
+	/* background-color: #FF0000; */
+	background: #d21616;
 	color: #FFFFFF;
 }
 .ui-datepicker-calendar tr td:last-child a {
 	background-image: none;
-	background-color: #0000FF;
+	/* background-color: #0000FF; */
+	background: #0b84d2;
 	color: #FFFFFF;
 }
 

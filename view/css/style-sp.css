@@ -68,7 +68,7 @@ select{
 }
 
 .btn_regist {
-    padding: .5em 4em;
+    padding: 0 4em;
 }
 
 #left-wrapper h2 {
@@ -79,7 +79,7 @@ select{
     display: inline-block;
     font-size: 100%;
     font-weight: normal;
-    padding: 10px 20px;
+    padding: 0 20px;
     background: #222;
     color: #fff;
     text-shadow: 1px 1px 1px #666;
@@ -127,6 +127,11 @@ select{
 
 .event-title span {
     font-size: 130%;
+}
+
+.input {
+    padding: 20px;
+    margin: 50px auto;
 }
 
 .sp-none{

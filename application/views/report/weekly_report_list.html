@@ -23,7 +23,7 @@ $(document).ready(function() {
 	<table border="0" class="list mytable">
 		{% if list|length == 0%}
 			<tr>
-				<td align="center">データはありません。</td>
+				<td align="center">お探しのデータが見つかりません。</td>
 			</tr>
 		{% else %}
 			<thead>
@@ -40,8 +40,8 @@ $(document).ready(function() {
 					<td align="center"><a href="{{ base_url }}WeeklyReportRegist/modify_input/{{ item.id }}"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
 					<td><i class="fa fa-calendar sp-none" aria-hidden="true"></i>{{ item.date }}</td>
 					<td><i class="fa fa-user-circle-o sp-none" aria-hidden="true"></i>{{ item.name}}</td>
-					<td align="center">
-						<input type="button" class="btn_detail" value="詳細" onclick="sub_redirect('{{ base_url }}', 'WeeklyReportList', 'detail', '{{ item.id }}')">
+					<td align="center" class="detail">
+						<input type="button" class="btn_detail " value="詳細" onclick="sub_redirect('{{ base_url }}', 'WeeklyReportList', 'detail', '{{ item.id }}')">
 					</td>
 				</tr>
 				{% endfor %}
